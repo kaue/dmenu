@@ -1,5 +1,28 @@
-# Luke's dmenu
+dmenu - dynamic menu
+====================
+dmenu is an efficient dynamic menu for X.
 
+
+Requirements
+------------
+In order to build dmenu you need the Xlib header files.
+
+
+Installation
+------------
+You must have `libxft-bgra` installed until the libxft upstream is fixed. (emoji support)
+
+Edit config.mk to match your local setup (dmenu is installed into
+the /usr/local namespace by default).
+
+Afterwards enter the following command to build and install dmenu
+(if necessary as root):
+
+    make clean install
+
+Running dmenu
+-------------
+See the man page for details.
 Extra stuff added to vanilla dmenu:
 
 - reads Xresources (ergo pywal compatible)
@@ -9,8 +32,5 @@ Extra stuff added to vanilla dmenu:
 - `-r` to reject non-matching input
 - dmenu options are mouse clickable
 
-## Installation
 
-You must have `libxft-bgra` installed until the libxft upstream is fixed.
-
-After making any config changes that you want, but `make`, `sudo make install` it.
+Fork from https://github.com/LukeSmithxyz/dmenu
